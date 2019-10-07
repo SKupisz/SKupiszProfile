@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+.welcome-header{
+    font-size: 2.7em;
+    font-family: 'Oswald',sans-serif;
+    margin-bottom: 20px;
+}
+.short-describe,.tech-describe{
+    width: 60%;
+    float: left;
+    font-size: 1.3em;
+    font-family: 'Lato',sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+.tech-describe{
+    margin-top: 20px;
+    float: right;
+}
+.my-profiles{
+    width: calc(100% - 20px);
+    float: left;
+    margin-top: 250px;
+    padding: 10px;
+}
+.go-to{
+    margin: 5px;
+    padding: 10px;
+    font-size: 2em;
+    font-family: 'Oswald',sans-serif;
+    border-radius: 5px;
+    border: 3px double white;
+    cursor: pointer;
+    transition: filter 0.43s;
+}
+.go-toIcon{
+    margin-right: 5px;
+}
+.twitterIcon{
+    width: 32px;
+    height: auto;
+}
+.my-profiles button:hover{
+    filter: brightness(70%);
+}
+.my-profiles button:focus{
+    outline: none;
+}

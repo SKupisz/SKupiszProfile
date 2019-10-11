@@ -8,6 +8,7 @@ import {
 
 import Welcome from "./components/welcome.jsx";
 import Blog from "./components/blog.jsx";
+import Projects from "./components/projects.jsx";
 import Contact from "./components/contact.jsx";
 import OptionsBar from "./components/openingBar.jsx";
 
@@ -44,6 +45,7 @@ function App() {
       <Route exact path = "/" component = {Welcome}/>
       <Route path = "/blog" component = {Blog}/>
       <Route path = "/contact" component = {Contact}/>
+      <Route path = "/portfolio" component = {Projects}/>
       <OptionsBar/>
       </main>
     </div>
@@ -51,9 +53,5 @@ function App() {
     </div>
   );
 }
-/*
-      <Route exact path = "/" component = {Welcome}/>
-      <Route path = "/portfolio" component = {Porfolio}/>
-      
-      */
+
 export default App;

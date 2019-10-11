@@ -14,7 +14,7 @@ export default class PreOperations{
     this.giveContactDescContent = this.giveContactDescContent.bind(this);
     if(this.nowHash == "")
     {
-      window.location.hash = "#/";
+      window.location.hash = "#/english";
     }
   }
   check(){

@@ -9,7 +9,7 @@ export default class PreOperations{
       this.check = this.check.bind(this);
       if(this.nowHash == "")
       {
-        window.location.hash = "#/";
+        window.location.hash = "#/english";
       }
     }
     check(){

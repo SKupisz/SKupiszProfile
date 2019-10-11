@@ -23,6 +23,7 @@ a{
   height: 67px;
   width: 100%;
   float: left;
+  background: none;
 }
 .nav-section,.navbar-hamburger{
   font-size: 1.4em;
@@ -33,14 +34,15 @@ a{
   cursor: pointer;
   padding: 10px;
   color: black;
+  z-index: 6;
 }
-label[class = "navbar-options nav-section"]::before{
+.top-nav::before{
   content: '';
 }
-label[classificate="nav-section"]{
+.top-nav{
   transition: all 0.4s;
 }
-label[classificate="nav-section"]:hover{
+*[classificate="nav-section"]:hover{
   background: rgba(11,11,11,.4);
 }
 .navbar-logo{
@@ -81,36 +83,31 @@ input:checked[id="if-phone"] ~ .openNav
 }
 @media screen and (max-width: 768px)
 {
-  .navbar-hamburger{
-    font-size: 1.4em;
-    margin-right: 20px;
-    font-family: 'Lato',sans-serif;
-    float: right;
-    margin-top: 10px;
-    cursor: pointer;
-    padding: 10px;
-    color: black;
+  .openNav{
+    width: 100%;
+    text-align: center;
     display: block;
   }
-  .openNav{
-    display: none;
-    height: 200px;
-    margin-top: 67px;
-    position: absolute;
-    width: 100%;
-    transition: all 1s;
+  .navbar-logo{
+    margin-left: 100px;
   }
-  .describing,.working{
-    width: 100%;
-    float: left;
+}
+@media screen and (max-width: 695px){
+  .top-nav{
+    display: inline-block;
+    width: calc(25% - 20px);
+    margin: 0px;
+    margin-right: 0px;
+    background: #eee;
+    position: relative;
+    font-size: 1em;
   }
-  .navbar-logo,.navbar-about,.navbar-portfolio,.navbar-contact{
-    width: 100%;
-    margin-left: 0px;
-    margin-top: 0px;
-    padding: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+@media screen and (max-width: 430px){
+  .top-nav{
+    width: calc(50% - 20px);
   }
-
+  .appContent{
+    margin-top: 20px;
+  }
 }

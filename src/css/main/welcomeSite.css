@@ -45,3 +45,38 @@
 .my-profiles button:focus{
     outline: none;
 }
+@media screen and (max-width: 883px){
+    .short-describe,.tech-describe{
+        width: calc(100% - 20px);
+        float: left;
+    }
+}
+@media screen and (max-width: 589px){
+    .my-profiles{
+        margin-top: 170px;
+    }
+}
+@media screen and (max-width: 495px){
+    .my-profiles{
+        margin-top: 120px;
+    }
+}
+@media screen and (max-width: 430px){
+    .go-to{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 50%;
+    }
+    .my-profiles{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 370px){
+    .short-describe,.tech-describe{
+        font-size: 1.1em;
+    }
+    .go-to{
+        min-width: 60%;
+    }
+}

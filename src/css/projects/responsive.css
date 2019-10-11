@@ -1,0 +1,32 @@
+@media screen and (max-width: 791px){
+    .skill{
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 500px){
+    .skill{
+        padding: 10px;
+        text-align: center;
+        width: calc(100% - 20px);
+    }
+}
+@media screen and (max-width: 378px){
+    .navigateBtn{
+        width: 100px;
+        font-size: 1.3em;
+    }
+    .left{
+        margin-right: calc(20% - 15px);
+    }
+    .right{
+        margin-left: calc(20% - 15px);
+    }
+}
+@media screen and (max-width: 357px){
+    .skills{
+        min-height: 350px;
+    }
+    .skill{
+        font-size: 1.1em;
+    }
+}

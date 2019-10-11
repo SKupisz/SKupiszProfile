@@ -20,22 +20,18 @@ function App() {
       <Router>
     <div className="App">
       <nav class="mainNavbar">
-      <input type = "checkbox" id = "if-phone"/>
-      <label class = "navbar-hamburger nav-section" classificate = "nav-section" for = "if-phone">
-      Open
-      </label>
       <section class = "openNav">
       <Link to = {"/"+window.location.hash}>
-        <label class="navbar-logo nav-section" classificate = "nav-section">SKupisz</label>
+        <div class="navbar-logo nav-section top-nav" classificate = "nav-section">SKupisz</div>
         </Link>
         <Link to = {"/portfolio/skills"+window.location.hash}>
-        <label class="navbar-about nav-section" classificate = "nav-section">Portfolio</label>
+        <div class="navbar-about nav-section top-nav" classificate = "nav-section">Portfolio</div>
         </Link>
         <Link to = {"/blog"+window.location.hash}>
-        <label class="navbar-portfolio nav-section" classificate = "nav-section">Blog</label>
+        <div class="navbar-portfolio nav-section top-nav" classificate = "nav-section">Blog</div>
         </Link>
         <Link to = {"/contact"+window.location.hash}>
-        <label class="navbar-contact nav-section" classificate = "nav-section">Contact me</label>
+        <div class="navbar-contact nav-section top-nav" classificate = "nav-section">Contact me</div>
         </Link>
         </section>
 

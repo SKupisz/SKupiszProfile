@@ -2,6 +2,8 @@ import React from 'react';
 
 import "../css/projects/main.css";
 
+import PreOperations from "../projects/preOperations.jsx";
+
 export default class Portfolio extends React.Component{
     constructor(props){
         super(props);
@@ -17,7 +19,6 @@ export default class Portfolio extends React.Component{
         ["SGK-news.pl","Założyciel i dyrektor generalny"],
         ["Szyfr Delta","Pomysłodawca i założyciel projektu"],
         ["Hackclub.pl","Współzałożyciel i prowadzący"]];
-        /* TODO: slider - implementacja i mechanika z osobną klasą do tworzenia kolejnych slajdów */
     }
     skillsOn(){
         this.skillsRef.current.classList.remove("hidden");
@@ -27,7 +28,7 @@ export default class Portfolio extends React.Component{
         this.skillsRef.current.classList.add("hidden");
         this.projectsRef.current.classList.remove("hidden");
     }
-    changeSlide(e,direction){
+    changeSlide(direction){
         switch(direction){
             case 1:
                 if(this.classIteration+1 < this.backgroundClassesList.length){
@@ -52,14 +53,22 @@ export default class Portfolio extends React.Component{
         }
     }
     render(){
+        let controlPanel = new PreOperations();
+        controlPanel.check();
+        let mainHeader = controlPanel.giveHeaderContent();
+        let skillsBtnContent = controlPanel.giveSkillsBtnContent();
+        let projectsBtnContent = controlPanel.giveProjectsBtnContent();
+        this.titlesList = controlPanel.giveSlidesContent();
+        let oopContent = controlPanel.giveOopContent(),auContent = controlPanel.giveAuContent();
+        let starterProjectsTitle = this.titlesList[0][0],starterProjectsContent = this.titlesList[0][1];
         return(<div className = "portfolio">
-            <header className = "welcome-header">Moje Portfolio</header>
+            <header className = "welcome-header">{mainHeader}</header>
             <nav className = "buttons-nav">
                 <button ref = {this.skillsBtn} onClick = {() => {this.skillsOn()}}>
-                    Umiejętności
+                    {projectsBtnContent}
                 </button>
                 <button ref = {this.projectsBtn} onClick = {() => {this.projectsOn()}}>
-                    Projekty
+                    {skillsBtnContent}
                 </button>
             </nav>
             <section ref = {this.skillsRef} className = "subsection-container skills">
@@ -85,20 +94,20 @@ export default class Portfolio extends React.Component{
                     Python
                 </div>   
                 <div className = "skill">
-                    Programowanie Objektowe
+                    {oopContent}
                 </div>  
                 <div className = "skill">
-                    Automatyzacja (python)
+                    {auContent}
                 </div>                
             </section>
             <section ref = {this.projectsRef} className = "subsection-container projects starter-background hidden">
-                <header ref = {this.titleRef} className = "projects-header">Projekty</header> 
-                <main ref = {this.descRef} className = "projects-positions">Pozwól, że ci pokażę nieco z moich projektów</main>          
+                <header ref = {this.titleRef} className = "projects-header">{starterProjectsTitle}</header> 
+                <main ref = {this.descRef} className = "projects-positions">{starterProjectsContent}</main>          
                 <nav className = "navigate-interrupt">
-                    <button className = "navigateBtn"  onClick = {() => {this.changeSlide(this.event,-1)}}>
+                    <button className = "navigateBtn"  onClick = {() => {this.changeSlide(-1)}}>
                         Previous
                     </button>
-                    <button className = "navigateBtn"  onClick = {() => {this.changeSlide(this.event,1)}}>
+                    <button className = "navigateBtn"  onClick = {() => {this.changeSlide(1)}}>
                         Next
                     </button>
                 </nav>

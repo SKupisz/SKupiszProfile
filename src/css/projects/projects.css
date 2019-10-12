@@ -52,19 +52,19 @@
     background-position-y: top;
 }
 .sgknews-background{
-    background: url("../../img/projects/SGK-news2.png");
+    background: url("../../img/projects/SGK-news2.webp");
     background-size: cover;
     background-position: center;
     background-position-y: top;
 }
 .delta-background{
-    background: url("../../img/projects/delta.png");
+    background: url("../../img/projects/delta.webp");
     background-size: cover;
     background-position: center;
     background-position-y: top;
 }
 .hackclub-background{
-    background: url("../../img/projects/hackclub.png");
+    background: url("../../img/projects/hackclub.webp");
     background-size: cover; 
     background-position: center;
     background-position-y: top;

@@ -46,19 +46,19 @@
     transition: all 0.4s;
 }
 .starter-background{
-    background: url("../../img/projects/default.jpg");
+    background: url("../../img/projects/default2.jpg");
     background-size: cover;
     background-position: center;
     background-position-y: top;
 }
 .sgknews-background{
-    background: url("../../img/projects/SGK-news2.webp");
+    background: url("../../img/projects/SGK-news3.webp");
     background-size: cover;
     background-position: center;
     background-position-y: top;
 }
 .delta-background{
-    background: url("../../img/projects/delta.webp");
+    background: url("../../img/projects/delta2.webp");
     background-size: cover;
     background-position: center;
     background-position-y: top;

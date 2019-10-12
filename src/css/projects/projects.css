@@ -49,23 +49,19 @@
     background: url("../../img/projects/default2.jpg");
     background-size: cover;
     background-position: center;
-    background-position-y: top;
 }
 .sgknews-background{
     background: url("../../img/projects/SGK-news3.webp");
     background-size: cover;
     background-position: center;
-    background-position-y: top;
 }
 .delta-background{
     background: url("../../img/projects/delta2.webp");
     background-size: cover;
     background-position: center;
-    background-position-y: top;
 }
 .hackclub-background{
     background: url("../../img/projects/hackclub.webp");
     background-size: cover; 
     background-position: center;
-    background-position-y: top;
 }

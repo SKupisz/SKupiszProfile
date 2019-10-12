@@ -75,7 +75,7 @@
       height: 30px;
       -webkit-appearance: none;
       outline: none;
-      z-index: 3;
+      z-index: 7;
       content: '';
       border: 1px solid #111;
     }

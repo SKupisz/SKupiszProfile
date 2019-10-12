@@ -83,18 +83,12 @@ input:checked[id="if-phone"] ~ .openNav
 }
 @media screen and (max-width: 768px)
 {
-  .openNav{
-    width: 100%;
-    text-align: center;
-    display: block;
-  }
   .navbar-logo{
     margin-left: 100px;
   }
 }
 @media screen and (max-width: 695px){
   .top-nav{
-    display: inline-block;
     width: calc(25% - 20px);
     margin: 0px;
     margin-right: 0px;
@@ -109,5 +103,8 @@ input:checked[id="if-phone"] ~ .openNav
   }
   .appContent{
     margin-top: 20px;
+  }
+  .options-polish-img{
+    margin-top: 80px;
   }
 }
